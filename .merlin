@@ -1,0 +1,6 @@
+B facebook-clang-plugins/clang-ocaml/build
+S .
+PKG atdgen
+PKG atdgen-runtime
+PKG yojson
+PKG zip

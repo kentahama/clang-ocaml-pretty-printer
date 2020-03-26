@@ -4,8 +4,9 @@
 
 Firstly you should compile `facebook-clang-plugins` (which is submoduled in this repo), run
 ```
-CLANG_PREFIX=/usr
+export CLANG_PREFIX=/usr
 make -C facebook-clang-plugins
+opam install camlzip yojson atd atdgen
 make -C facebook-clang-plugins/clang-ocaml
 ```
 where CLANG is assumed to be installed in `/usr` (`clang` is located at `/usr/bin/clang`).
