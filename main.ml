@@ -39,7 +39,5 @@ let rec print_decl d =
 
 let () =
   let fname = Sys.argv.(1) in
-  let ic = open_in_bin fname in
-  let d = Marshal.from_channel ic in
-  print_decl d;
-  close_in ic
+  let d = Yojson_utils.read_data_from_file J.read_decl fname in
+  print_decl d
